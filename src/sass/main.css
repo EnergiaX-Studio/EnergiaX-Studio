@@ -18,7 +18,7 @@ aside {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-image: url(/src/images/BackGround/bgHome.jpg);
+  background-image: url(../../src/images/BackGround/bgHome.jpg);
   padding: 15px;
 }
 
@@ -78,7 +78,7 @@ aside {
 }
 .introduction {
   margin-top: 90.7px;
-  background-image: url(/src/images/BackGround/bgHome.jpg);
+  background-image: url(../../src/images/BackGround/bgHome.jpg);
 }
 
 .baner {
