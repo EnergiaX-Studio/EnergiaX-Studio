@@ -50,13 +50,6 @@ border-radius: 20px 20px 20px 20px;
 .navigation__link:hover {
   color:#d69130;
 }
-.section {
-  height: 100vh;
-  scroll-snap-align: start;
-}
-:target {
-  scroll-margin-top: 50px; /* Dodaj margines do uwzględnienia stałej wysokości menu */
-}
 
 @media screen and (max-width: 760px){
   .hide-for-phone{
