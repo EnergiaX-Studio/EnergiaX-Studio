@@ -24,15 +24,161 @@
         <title>EnergiaX Studio</title>
   </head>
   <body>
-    <include src="./src/partialsHome/header.html"></include>
-    <include src="./src/partialsHome/introduction.html"></include>
-    <include src="./src/partialsHome/HideForm1.html"></include>
-    <include src="./src/partialsHome/products.html"></include>
-    <include src="./src/partialsHome/about.html"></include>
-    <include src="./src/partialsHome/joinUs.html"></include>
-    <include src="./src/partialsHome/footer.html"></include>
+    <header class="header">
+      <div class="logo"> 
+        <a class="logo__link" href="index.html">
+          <img src="./src/images/Logo/EnergiaXStudioLogo.png" alt="EnergiaX Studio" />
+        </a>
+        
+      </div>
+      <div class="navigation__container hide-for-phone"> 
+        <nav class="navigation">
+          <ul class="navigation__list">
+              <li class="navigation__item">
+                  <a class="navigation__link navigation__link--active" href="index.html">Główna</a>
+              </li>
+              <li class="navigation__item">
+                  <a class="navigation__link" href="" >O nas</a>
+              </li>
+              <li class="navigation__item">
+                  <a class="navigation__link" href="" >Projekty</a>
+              </li>
+              <li class="navigation__item">
+                  <a class="navigation__link joinUs__link" href="#joinUs">Dołącz do nas</a>
+              </li>
+              <li class="navigation__item">
+                  <a class="navigation__link" data-modal-open href="">Kontakt</a>
+              </li>
+          </ul>
+      </nav>
+      </div>
+    </header>
+
+
+    <section class="introduction">
+      <p>Sorry, page under construction! Przepraszamy, strona w budowie!</p>
+      <div class="baner">
+        <img src="./src/images/Logo/EnergiaXStudio.png">
+      </div>
+      <h1>Ispirujące Projekty</h1>
+      <aside>Niesamowite Gry</aside>
+    <div class="projects">
+      <ul class="projects_list">
+        <li class="projects_list_item">
+          <img class="projects_list_item_img" src="./src/images/Produkty/mieczKreacji.jpg" alt="Pierwszy"/>
+          <h2>Miecz Kreacji</h2>
+          <p>RPG</p>
+          <div class="projects_list_item_ikon">
+            <img src="./src/images/Ikony/projekt.jpg"/>
+          </div>
+        </li>
+        <li class="projects_list_item">
+          <img class="projects_list_item_img" src="./src/images/Produkty/samoloty2.JPG" alt="Pierwszy"/>
+          <h2>AirCraft</h2>
+          <p>Akcji</p>
+          <div class="projects_list_item_ikon">
+            <img src="./src/images/Ikony/win.png">
+          </div>
+        </li>
+        <li class="projects_list_item">
+          <img class="projects_list_item_img" src="./src/images/Produkty/strzelanka.JPG" alt="Pierwszy"/>
+          <h2>Shooter</h2>
+          <p>Akcji, asset</p>
+          <div class="projects_list_item_ikon">
+            <img src="./src/images/Ikony/unity.jpg"/>
+          </div>
+        </li>
+        <li class="projects_list_item">
+          <a href="index.html">
+          <img class="projects_list_item_img" src="./src/images/Produkty/more.JPG" alt="Pierwszy"/>
+        </a>
+          <h2>Odkryj Więcej</h2>
+          <p> -></p>
+          <div class="projects_list_item_ikon">
+          </div>
+        </li>
+      </ul> 
+    
+    </div>
+    </section>
+
+    <section id ="joinUs" class="joinUs">
+    
+    
+    <a class="social__link" href="https://discord.gg/b7BsS4GQJ3">
+      <img src="./src/images/SocialMedia/diskord370p1.png" alt="discord" />
+    </a>
+    
+    </section>
+
+
+
+
+    <div class="ContactForm is-hidden" data-modal>
+      <div class="modal">
+          <form action="" class="modal__form">
+              <div class="modal__form__container">
+                  <h3 class="modal__form__title">Zostaw swoje dane w formularzu poniżej</h3>
+    
+                  <label class="modal__form__label" for="imie">Imię
+                      <div class="modal__form__label__container">
+                          <input class="modal__form__input" type="text" required name="imie" id="imie" />
+                          <svg class="modal__form__svg" width="18" height="18">
+                              <use href="src/images/symbol-defs.svg#person-form" width="18" height="18"></use>
+                          </svg>
+                      </div>
+                  </label>
+    
+                  <label class="modal__form__label" for="tel">Telefon
+                      <div class="modal__form__label__container">
+                          <input class="modal__form__input" type="tel" required name="tel" id="tel" />
+                          <svg class="modal__form__svg" width="18" height="18">
+                              <use href="src/images/symbol-defs.svg#phone-form" width="18" height="18"></use>
+                          </svg>
+                      </div>
+                  </label>
+    
+                  <label class="modal__form__label" for="mail">Email
+                      <div class="modal__form__label__container">
+                          <input class="modal__form__input" type="email" required name="email" id="mail" />
+                          <svg class="modal__form__svg" width="18" height="18">
+                              <use href="src/images/symbol-defs.svg#email-form" width="18" height="18"></use>
+                          </svg>
+                      </div>
+                  </label>
+                  <div class="modal__form__policy__container">
+                      <label class="modal__form__policy__label" for="policy">
+                          <input class="modal__form__policy__input" type="checkbox" unchecked required name="policy"
+                              id="policy" />
+                          <span class="modal__form__policy__checkmark">
+                              <svg class="modal__form__policy__checkmark__svg" width="11" height="11">
+                                  <use href="src/images/symbol-defs.svg#checkbox" width="11" height="11"></use>
+                              </svg>
+                          </span>
+                          <div class="modal__form__policy__text">
+                              <span>Oświadczam iż akceptuję</span>
+                              <a class="modal__form__policy__link" href="#">Regulamin</a>
+                              <span>i</span>
+                              <a class="modal__form__policy__link" href="#">Politykę Prywatności.</a>
+                          </div>
+                      </label>
+                  </div>
+    
+                  <button class="modal__form__btn" type="submit">Wyślij</button>
+              </div>
+          </form>
+          <button class="modal__btn__close" data-modal-close>
+              <svg class="" width="11" height="11">
+                  <use href="src/images/symbol-defs.svg#close" width="11" height="11"></use>
+              </svg>
+          </button>
+      </div>
+    </div>
+
+
+
+
 
     <script src="./src/js/index.js"></script>
-    <script src="https://morgan3d.github.io/include.js/include.min.js"></script>
   </body>
 </html>
