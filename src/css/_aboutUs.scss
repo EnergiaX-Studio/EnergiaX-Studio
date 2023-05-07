@@ -1,0 +1,27 @@
+.aboutUs__img {
+  display: block;
+  max-width: 100%;
+}
+
+.aboutUs__card {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.aboutUs__card.flex-start-aligned {
+  align-items: flex-start;
+}
+.aboutUs {
+  background-color: transparent;
+  top: 0px;
+  width: 100%;
+  justify-content: space-between;
+  background-image: url(../images/BackGround/bg1.jpg);
+  padding: 15px;
+
+}
