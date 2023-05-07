@@ -8,6 +8,29 @@
   width: 587px;
 }
 
+.contact__btn {
+  display: block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 0 auto;
+}
+
+.contact__btn:hover {background-color: #3e8e41}
+
+.contact__btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 @media screen and (max-width: 760px){
   .introduction{
     margin-top: 82.4px;

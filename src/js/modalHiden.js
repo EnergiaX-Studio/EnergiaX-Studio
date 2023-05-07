@@ -1,12 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  fetch("src/partial/header.html")
-    .then(response => response.text())
-    .then(data => {
-      document.body.insertAdjacentHTML("afterbegin", data);
-    })
-    .catch(error => console.log(error));
-});
-
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
@@ -14,12 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
   };
-
+  if (refs.openModalBtn === null) {
+    console.log("openModalBtn is null");
+  }
   refs.openModalBtn.addEventListener('click', toggleModal);
  // refs.openModalBtnMobile.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
+  function toggleModal(event) {
+    console.log("wbiłem2");
     refs.modal.classList.toggle('is-hidden');
   }
 })();

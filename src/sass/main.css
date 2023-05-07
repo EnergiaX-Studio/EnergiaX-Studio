@@ -29,6 +29,7 @@ section {
   justify-content: space-between;
   background-image: url(../images/BackGround/bgHome.jpg);
   padding: 15px;
+  z-index: 100;
 }
 
 .navigation__container {
@@ -85,6 +86,32 @@ section {
   margin-right: auto;
   margin-left: auto;
   width: 587px;
+}
+
+.contact__btn {
+  display: block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 0 auto;
+}
+
+.contact__btn:hover {
+  background-color: #3e8e41;
+}
+
+.contact__btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 @media screen and (max-width: 760px) {
@@ -435,16 +462,26 @@ section {
 .aboutUs__img {
   display: block;
   max-width: 100%;
+  max-height: 180px;
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+
+.aboutUs__img:hover {
+  transform: scale(1.5);
 }
 
 .aboutUs__card {
   display: flex;
   gap: 10px;
   max-width: 600px;
-  margin: 0 auto;
   padding: 10px;
-  background-color: #fff;
   border-radius: 4px;
+  transition: background-color 500ms linear;
+}
+
+.aboutUs__card:hover {
+  background-color: teal;
 }
 
 .aboutUs__card.flex-start-aligned {
@@ -453,9 +490,25 @@ section {
 
 .aboutUs {
   background-color: transparent;
-  top: 0px;
   width: 100%;
   justify-content: space-between;
   background-image: url(../images/BackGround/bg1.jpg);
   padding: 15px;
+  margin-top: 90.7px;
+}
+
+.modal__imgContainer {
+  position: fixed;
+  top: 90.7px;
+  left: 0;
+  max-height: 85vh;
+  display: none;
+  transition-property: transform;
+  transition-duration: 500ms;
+  padding: 10px;
+}
+
+.modal__imgContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=main.css.map */
